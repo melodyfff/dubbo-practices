@@ -3,17 +3,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.xinchen</groupId>
-    <artifactId>dubbo</artifactId>
+    <parent>
+        <groupId>com.xinchen</groupId>    
+        <artifactId>dubbo</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+ 
+    <artifactId>dubbo_zookeeper</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>dubbo_zookeeper</module>
+        <module>dubbo_zookeeper_api</module>
+        <module>dubbo_zookeeper_consumer</module>
+        <module>dubbo_zookeeper_provider</module>
     </modules>
 
-    <name>dubbo practices</name>
+    <name>dubbo_zookeeper</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
