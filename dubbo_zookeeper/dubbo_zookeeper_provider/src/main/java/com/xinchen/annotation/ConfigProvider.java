@@ -1,4 +1,4 @@
-package com.xinchen.config;
+package com.xinchen.annotation;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

@@ -1,12 +1,12 @@
 package com.xinchen;
 
-import com.alibaba.dubbo.config.ApplicationConfig;
-import com.alibaba.dubbo.config.ProtocolConfig;
-import com.alibaba.dubbo.config.RegistryConfig;
-import com.alibaba.dubbo.config.ServiceConfig;
 import com.xinchen.impl.DemoServiceImpl;
 
 import java.io.IOException;
+import org.apache.dubbo.config.ApplicationConfig;
+import org.apache.dubbo.config.ProtocolConfig;
+import org.apache.dubbo.config.RegistryConfig;
+import org.apache.dubbo.config.ServiceConfig;
 
 /**
  *

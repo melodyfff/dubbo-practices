@@ -1,7 +1,7 @@
-package com.xinchen.config;
+package com.xinchen.annotation;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.xinchen.DemoService;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Component;
 
 /**
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component("demoServiceAction")
 public class DemoServiceAction {
 
-    @Reference
+    @DubboReference
     private DemoService demoService;
 
     public String say(){

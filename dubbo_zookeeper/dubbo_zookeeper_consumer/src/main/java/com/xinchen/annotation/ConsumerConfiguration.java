@@ -1,6 +1,6 @@
-package com.xinchen.config;
+package com.xinchen.annotation;
 
-import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -14,8 +14,8 @@ import org.springframework.context.annotation.PropertySource;
  */
 
 @Configuration
-@EnableDubbo(scanBasePackages = "com.xinchen.config")
+@EnableDubbo(scanBasePackages = "com.xinchen.annotation")
 @PropertySource("classpath:dubbo-consumer.properties")
-@ComponentScan(value = "com.xinchen.config")
+@ComponentScan(value = "com.xinchen.annotation")
 public class ConsumerConfiguration {
 }

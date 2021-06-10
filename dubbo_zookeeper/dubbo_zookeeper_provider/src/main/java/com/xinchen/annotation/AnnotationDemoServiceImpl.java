@@ -1,7 +1,7 @@
-package com.xinchen.impl;
+package com.xinchen.annotation;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.xinchen.DemoService;
+import org.apache.dubbo.config.annotation.DubboService;
 
 /**
  *
@@ -11,8 +11,8 @@ import com.xinchen.DemoService;
  * @version 1.0
  * @date 06/08/2019 11:00
  */
-@Service
-public class AnnotationDemoServiceImpl implements DemoService {
+@DubboService
+class AnnotationDemoServiceImpl implements DemoService {
     @Override
     public String sayHello(String name) {
         return "annotation: hello, " + name;
